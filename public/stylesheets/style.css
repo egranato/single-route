@@ -69,4 +69,11 @@ footer {
   color: #FFF;
   height: 45px; }
 
+.cards li {
+  font-weight: 700;
+  margin-bottom: 1rem; }
+  .cards li img {
+    width: 100px;
+    display: block; }
+
 /*# sourceMappingURL=style.css.map */

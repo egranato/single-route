@@ -1,0 +1,9 @@
+<ul class="cards">
+    {{#each cards}}
+        <li data-card-id="{{id}}">
+            <p class="card-name">{{name}}</p>
+            <img src="{{pictureUrl}}" alt="picture of card {{name}}" />
+            <output>{{manaCost}}</output>
+        </li>
+    {{/each}}
+</ul>
