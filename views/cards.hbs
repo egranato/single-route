@@ -4,10 +4,11 @@
             <p class="card-name">{{name}}</p>
             <img src="{{pictureUrl}}" alt="picture of card {{name}}" />
             <output>{{manaCost}}</output>
+            <a href="cards/edit/{{id}}">Edit Card</a>
             <form action="cards/{{id}}?_method=DELETE" method="post">
-              <input type="submit" value="Delete?" class="failure">
+              <input type="submit" value="Delete Card?" class="failure">
             </form>
         </li>
     {{/each}}
     <a href="cards/new">Add Card</a>
-</ul>
+  </ul>

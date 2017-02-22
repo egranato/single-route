@@ -14,11 +14,27 @@ router.get('/new', function(req, res, next) {
   res.render('new-card');
 });
 
+router.get('/edit/:id', function(req, res, next) {
+  queries.getCard(req.params.id).then(function(card){
+      res.render("edit-card", card);
+  }).catch(console.error)
+});
+
+router.put('/:id', function(req, res, next) {
+  queries.editCard(req.params.id, req.body).then(function(){
+      res.redirect("/cards");
+  }).catch(console.error)
+});
+
+
+
 router.post('/', function(req, res, next) {
   queries.addCard(req.body).then(function(){
       res.redirect("cards");
   }).catch(console.error)
 });
+
+
 
 router.delete('/:id', function(req, res, next) {
   queries.deleteCard(req.params.id).then(function() {
