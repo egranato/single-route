@@ -65,13 +65,11 @@ footer {
   height: 45px;
 }
 
-.cards {
-    li {
-        font-weight: 700;
-        margin-bottom: 1rem;
-        img {
-            width: 100px;
-            display: block;
-        }
+.card {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    img {
+      width: 100px;
+      display: block;
     }
 }

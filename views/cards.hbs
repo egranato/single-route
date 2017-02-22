@@ -1,13 +1,9 @@
 <ul class="cards">
     {{#each cards}}
-        <li data-card-id="{{id}}">
+        <li class="card" data-card-id="{{id}}">
             <p class="card-name">{{name}}</p>
-            <img src="{{pictureUrl}}" alt="picture of card {{name}}" />
+            <a href="/cards/{{id}}"><img src="{{pictureUrl}}" alt="picture of card {{name}}" /></a>
             <output>{{manaCost}}</output>
-            <a href="cards/edit/{{id}}">Edit Card</a>
-            <form action="cards/{{id}}?_method=DELETE" method="post">
-              <input type="submit" value="Delete Card?" class="failure">
-            </form>
         </li>
     {{/each}}
     <a href="cards/new">Add Card</a>

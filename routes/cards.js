@@ -10,6 +10,12 @@ router.get('/', function(req, res, next) {
     }).catch(console.error)
 });
 
+router.get('/:id', function(req, res, next) {
+    queries.getCard(req.params.id).then(function(card){
+        res.render("card", card);
+    }).catch(console.error)
+});
+
 router.get('/new', function(req, res, next) {
   res.render('new-card');
 });
