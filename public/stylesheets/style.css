@@ -52,6 +52,25 @@ table {
 body {
   font-family: Merriweather; }
 
+input, label {
+  display: block; }
+
+form {
+  width: 30rem; }
+  form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    width: 100%; }
+  form .success {
+    background-color: #40bf40;
+    color: #FFF;
+    font-weight: 400;
+    border: none;
+    padding: 1rem;
+    transition: background-color 0.5s; }
+    form .success:hover {
+      background-color: #66cc66; }
+
 header {
   background-color: #333;
   color: #FFF;

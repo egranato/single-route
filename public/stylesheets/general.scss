@@ -1,10 +1,36 @@
 $dark-grey: #333;
 $white: #FFF;
+$success: hsl(120, 50%, 50%);
 
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700');
 
 body {
   font-family: Merriweather;
+}
+
+input, label {
+  display: block;
+}
+
+form {
+  width: 30rem;
+  // position: relative;
+  input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .success {
+    background-color: $success;
+    color: $white;
+    font-weight: 400;
+    border: none;
+    padding: 1rem;
+    transition: background-color 0.5s;
+    &:hover {
+      background-color: lighten($success, 10%);
+    }
+  }
 }
 
 header {

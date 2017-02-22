@@ -10,4 +10,14 @@ router.get('/', function(req, res, next) {
     }).catch(console.error)
 });
 
+router.get('/new', function(req, res, next) {
+  res.render('new-card');
+});
+
+router.post('/', function(req, res, next) {
+  queries.addCard(req.body).then(function(){
+      res.redirect("cards");
+  }).catch(console.error)
+});
+
 module.exports = router;
