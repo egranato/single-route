@@ -1,6 +1,7 @@
 $dark-grey: #333;
 $white: #FFF;
 $success: hsl(120, 50%, 50%);
+$failure: hsl(0, 50%, 50%);
 
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700');
 
@@ -29,6 +30,17 @@ form {
     transition: background-color 0.5s;
     &:hover {
       background-color: lighten($success, 10%);
+    }
+  }
+  .failure {
+    background-color: $failure;
+    color: $white;
+    font-weight: 400;
+    border: none;
+    padding: 1rem;
+    transition: background-color 0.5s;
+    &:hover {
+      background-color: lighten($failure, 10%);
     }
   }
 }

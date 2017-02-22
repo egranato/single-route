@@ -20,4 +20,10 @@ router.post('/', function(req, res, next) {
   }).catch(console.error)
 });
 
+router.delete('/:id', function(req, res, next) {
+  queries.deleteCard(req.params.id).then(function() {
+      res.redirect("/cards");
+  }).catch(console.error)
+});
+
 module.exports = router;

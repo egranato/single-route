@@ -70,6 +70,15 @@ form {
     transition: background-color 0.5s; }
     form .success:hover {
       background-color: #66cc66; }
+  form .failure {
+    background-color: #bf4040;
+    color: #FFF;
+    font-weight: 400;
+    border: none;
+    padding: 1rem;
+    transition: background-color 0.5s; }
+    form .failure:hover {
+      background-color: #cc6666; }
 
 header {
   background-color: #333;
